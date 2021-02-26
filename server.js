@@ -16,6 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Load the SDK and UUID
 var AWS = require('aws-sdk');
 var uuid = require('uuid');
+AWS.config.loadFromPath('./config.json');
 
 // Create unique bucket name
 var bucketName = 'node-sdk-sample-' + uuid.v4();
