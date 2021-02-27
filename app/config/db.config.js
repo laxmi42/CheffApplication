@@ -1,5 +1,5 @@
 module.exports = {
-  URL: "http://	185.224.138.213/chefanytime.in",
+  URL: "localhost",
  
   USER: "u463335842_root",
   PASSWORD: "Root@123",
