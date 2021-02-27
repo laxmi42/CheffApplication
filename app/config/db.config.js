@@ -1,7 +1,7 @@
 module.exports = {
-  URL: "localhost",
+  URL: "127.0.0.1",
  
-  USER: "u463335842_root",
+  USER: "u271274439_cheffapp",
   PASSWORD: "Root@123",
-  DB: "u463335842_cheff"
+  DB: " u271274439_cheffapp"
 };
