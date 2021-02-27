@@ -1,5 +1,5 @@
 module.exports = {
-  URL: "31.220.48.219",
+  URL:    "http://31.220.48.219:3030/vijaydeliveryservices.com/",
  
   USER: "u271274439_cheffapp",
   PASSWORD: "Root@123",
