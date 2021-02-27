@@ -31,7 +31,7 @@ require("./app/routes/customer.routes.js")(app);
 require("./app/routes/cheff-user.routes.js")(app);
 require("./app/routes/add-menu.routes.js")(app);
 // set port, listen for requests
-const PORT = process.env.PORT || 22;
+const PORT = process.env.PORT || 3006;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
