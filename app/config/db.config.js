@@ -1,5 +1,5 @@
 module.exports = {
-  URL: "127.0.0.1",
+  URL: "31.220.48.219",
  
   USER: "u271274439_cheffapp",
   PASSWORD: "Root@123",
