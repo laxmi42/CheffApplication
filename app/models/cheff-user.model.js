@@ -100,7 +100,7 @@ LoginUser = ( Email, password, result) => {
            
     //       }
     // else {
-     sql.query("select * from userRegister where Email ='"+Email+"' and password = '"+password+"'",(err, resp) => {
+     sql.query("select * from userregister where Email ='"+Email+"' and password = '"+password+"'",(err, resp) => {
        console.log(resp);
      
        if (err) {
