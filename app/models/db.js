@@ -5,9 +5,10 @@ var connection = mysql.createPool({
   url:dbConfig.database.URL,
   host: dbConfig.database.HOST,
   port: dbConfig.database.PORT,
+  db: dbConfig.database.DB,
   user: dbConfig.database.USER,
   password: dbConfig.database.PASSWORD,
-  db: dbConfig.database.DB,
+
 
 });
 console.log(connection);
@@ -19,7 +20,7 @@ console.log(connection);
 
 
 
-connection.query('SELECT * FROM u271274439_cheffapp.categories', function (error, results, fields) {
+connection.query('SELECT * FROM categories', function (error, results, fields) {
   if (error)
       throw error;
 
