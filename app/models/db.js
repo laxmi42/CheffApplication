@@ -1,7 +1,7 @@
 const mysql = require("mysqli");
 const dbConfig = require("../config/db.config.js");
 
-var connection = mysql.createPool({
+var connection = mysqli_connect({
   url: dbConfig.URL,
   host: dbConfig.HOST,
   port: dbConfig.PORT,
