@@ -43,9 +43,8 @@ app.get("/getdata", (req, res) => {
       result(null, err);
       return;
     }
-
-    console.log("customers: ", res);
-    result( res);
+console.log(res);
+   
   });
   res.json({ message: "Welcome to bezkoder application." });
 });
