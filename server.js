@@ -25,7 +25,28 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/getdata", (req, res) => {
 
+  var mysql = require('mysql');
+  var c = mysql.createConnection({
+    url:"http://vijaydeliveryservices.com",
+    host:"127.0.0.1",
+    port:"3306",
+    database: "u271274439_cheffapp",
+    debug:true,
+    user: "u271274439_cheffapp",
+    password: "Admin@123",
+  
+  });
 
+  sql.query("SELECT *  FROM categories ", (err, res) => {
+    if (err) {
+      console.log("error: ", err);
+      result(null, err);
+      return;
+    }
+
+    console.log("customers: ", res);
+    result(null, res);
+  });
   res.json({ message: "Welcome to bezkoder application." });
 });
 
