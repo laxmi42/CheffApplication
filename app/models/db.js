@@ -10,6 +10,15 @@ var connection = mysql.createPool({
   db: dbConfig.DB,
 
 });
+console.log(connection);
+if (!connection) {
+console.log("Connection failed: " +connection);
+}
+console.log("connectied sucessfullt");
+
+
+
+
 
 console.log("Connected");
 module.exports = connection;
