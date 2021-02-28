@@ -28,12 +28,12 @@ app.get("/getdata", (req, res) => {
   var mysql = require('mysql');
   var c = mysql.createConnection({
     url:"http://vijaydeliveryservices.com",
-    host:"127.0.0.1",
-    port:"3306",
-    database: "u271274439_cheffapp",
+    DB_HOST:"127.0.0.1",
+    DB_PORT:"3306",
+    DB_NAME: "u271274439_cheffapp",
     debug:true,
-    user: "u271274439_cheffapp",
-    password: "Admin@123",
+    DB_USER: "u271274439_cheffapp",
+    DB_PASS: "Admin@123",
   
   });
 
