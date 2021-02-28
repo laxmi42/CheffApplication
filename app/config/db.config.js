@@ -1,6 +1,6 @@
 module.exports = {
   database: {
-  URL: "http://vijaydeliveryservices.com/",
+  URL: "https://vijaydeliveryservices.com/",
   HOST:"127.0.0.1",
   PORT:"3306",
   DB: "u271274439_cheffapp",
