@@ -27,16 +27,16 @@ app.get("/getdata", (req, res) => {
 
   var mysql = require('mysql');
   var c = mysql.createConnection({
-    url:"https://auth-db472.hostinger.in/?_ga=2.243021762.131398274.1614429224-959561081.1610784664",
-    DB_HOST:"31.170.160.103 ",
+    
+    host:"31.170.160.103",
  
-    DB_NAME: "u271274439_cheffapp",
-    debug:true,
-    DB_USER: "u271274439_cheffapp",
-    DB_PASS: "Admin@123",
+    database: "u271274439_cheffapp",
+  
+    user: "u271274439_cheffapp",
+    password: "Admin@123",
   
   });
-
+console.log(c);
   c.query("SELECT *  FROM categories ", (err, res) => {
     if (err) {
       console.log("error: ", err);
