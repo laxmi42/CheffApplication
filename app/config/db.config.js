@@ -1,7 +1,7 @@
 module.exports = {
   database: {
 
-  HOST:"http://vijaydeliveryservices.com/127.0.0.1",
+  HOST:"127.0.0.1",
   PORT:"3306",
   DB: "u271274439_cheffapp",
   USER: "u271274439_cheffapp",
