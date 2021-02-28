@@ -1016,7 +1016,7 @@ getCategoryItems = result => {
     }
 
     console.log("customers: ", res);
-    result(null, res);
+    result( res);
   });
 };
 
