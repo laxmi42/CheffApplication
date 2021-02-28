@@ -40,7 +40,7 @@ app.get("/getdata", (req, res) => {
   c.query("SELECT *  FROM categories ", (err, res) => {
     if (err) {
       console.log("error: ", err);
-      result(null, err);
+      
       return;
     }
 console.log(res);
