@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
   url:dbConfig.database.URL,
   host: dbConfig.database.HOST,
   port: dbConfig.database.PORT,
-  db: dbConfig.database.DB,
+  database: dbConfig.database.DB,
   user: dbConfig.database.USER,
   password: dbConfig.database.PASSWORD,
 
