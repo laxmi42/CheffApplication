@@ -28,8 +28,8 @@ app.get("/getdata", (req, res) => {
   var mysql = require('mysql');
   var c = mysql.createConnection({
     url:"http://vijaydeliveryservices.com",
-    DB_HOST:"31.170.160.103",
-    DB_PORT:"3306",
+    DB_HOST:"sql472.main-hosting.eu ",
+ 
     DB_NAME: "u271274439_cheffapp",
     debug:true,
     DB_USER: "u271274439_cheffapp",
