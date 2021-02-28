@@ -1,4 +1,4 @@
-const mysql = require("mysql");
+const mysql = require("mysqli");
 const dbConfig = require("../config/db.config.js");
 
 var connection = mysql.createPool({
