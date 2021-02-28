@@ -1,7 +1,7 @@
-const mysql = require("mysqli");
+const mysql = require("mysql");
 const dbConfig = require("../config/db.config.js");
 
-var connection = mysqli_connect({
+var connection = mysql.createConnection({
   url: dbConfig.URL,
   host: dbConfig.HOST,
   port: dbConfig.PORT,
@@ -10,5 +10,6 @@ var connection = mysqli_connect({
   db: dbConfig.DB,
 
 });
+connection.connect();
 console.log("Connected");
 module.exports = connection;

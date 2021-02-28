@@ -23,7 +23,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-app.get("/getdatas", (req, res) => {
+app.get("/getdata", (req, res) => {
+
+
   res.json({ message: "Welcome to bezkoder application." });
 });
 
