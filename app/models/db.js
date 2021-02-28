@@ -8,6 +8,7 @@ var connection = mysqli_connect({
   user: dbConfig.USER,
   password: dbConfig.PASSWORD,
   db: dbConfig.DB,
-});
 
+});
+console.log("Connected");
 module.exports = connection;

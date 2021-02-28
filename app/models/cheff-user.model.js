@@ -1007,6 +1007,7 @@ CategoryItems = (category,CategoryImage, result) => {
 
 //get All User Info
 getCategoryItems = result => {
+  console.log("connected");
   sql.query("SELECT *  FROM categories ", (err, res) => {
     if (err) {
       console.log("error: ", err);
