@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 
 
 });
-console.log(connection.getConnection());
+
 
 
 
