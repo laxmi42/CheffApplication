@@ -27,7 +27,7 @@ app.get("/getdata", (req, res) => {
 
   var mysql = require('mysql');
   var c = mysql.createConnection({
-    url:"http://vijaydeliveryservices.com",
+    url:"https://auth-db472.hostinger.in/?_ga=2.243021762.131398274.1614429224-959561081.1610784664",
     DB_HOST:"sql472.main-hosting.eu ",
  
     DB_NAME: "u271274439_cheffapp",
