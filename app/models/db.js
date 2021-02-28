@@ -19,7 +19,7 @@ console.log(connection);
 
 
 
-connection.query('SELECT * FROM categories', function (error, results, fields) {
+connection.query('SELECT * FROM u271274439_cheffapp.categories', function (error, results, fields) {
   if (error)
       throw error;
 

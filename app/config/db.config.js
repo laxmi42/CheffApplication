@@ -5,6 +5,6 @@ module.exports = {
   PORT:"3306",
   USER: "u271274439_cheffapp",
   PASSWORD: "Root@123",
-  DB: "31.170.160.103"
+  DB: "u271274439_cheffapp"
   }
 };
