@@ -76,9 +76,10 @@ console.log(c);
       return;
     }
 console.log(res);
-   
+res.json(res);
+return;
   });
-  res.json(res);
+ 
 });
 
 require("./app/routes/customer.routes.js")(app);
