@@ -259,7 +259,7 @@ exports.RegisterUser = (req, res) => {
   exports.BookService = (req, res) => {
        
     // console.log(req.body.password);
-    BookService(req.body.Name,req.body.bookingDate, req.body.menu1,req.body.menu2,req.body.menu3,req.body.homeAddrs,req.body.personsNumber,req.body.category,req.body.assign,req.body.userId,( data) => {
+    BookService(req.body.Name,req.body.bookingDate, req.body.menu1,req.body.menu2,req.body.menu3,req.body.homeAddrs,req.body.personsNumber,req.body.category,req.body.assign,req.body.userId,req.body.StateName,req.body.CityName,req.body.AreaName,( data) => {
         console.log("Name"+req.body.Name);
    
   res.send(data);

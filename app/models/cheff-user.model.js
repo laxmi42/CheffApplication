@@ -412,12 +412,12 @@ LoginCheff = ( Email, password, result) => {
 
 
 //Register User
-BookService = (Name, bookingDate, menu1, menu2, menu3, homeAddrs, personsNumber,category,assign,userId, result) => {
+BookService = (Name, bookingDate, menu1, menu2, menu3, homeAddrs, personsNumber,category,assign,userId,StateName,CityName,AreaName, result) => {
 
 
  
 
-  sql.query("INSERT INTO bookservice  SET Name=?,bookingDate=?,menu1=?,menu2=?,menu3=?,homeAddrs=?,personsNumber=?,category=?,assign=?,userId=?", [Name,bookingDate,menu1,menu2,menu3,homeAddrs,personsNumber,category,assign,userId], (err, rest) =>{ 
+  sql.query("INSERT INTO bookservice  SET Name=?,bookingDate=?,menu1=?,menu2=?,menu3=?,homeAddrs=?,personsNumber=?,category=?,assign=?,userId=?,State=?,City=?,Area=?", [Name,bookingDate,menu1,menu2,menu3,homeAddrs,personsNumber,category,assign,userId,StateName,CityName,AreaName], (err, rest) =>{ 
   
     let num=[
       rest
