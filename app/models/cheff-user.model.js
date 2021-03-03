@@ -556,7 +556,7 @@ resp=[
 UserUplaodbase64 = ( userId, base64 ,result) => {
 
 
-  sql.query("select * from UserUpload where userId ='"+userId+"' ",(err, res) => {
+  sql.query("select * from userupload where userId ='"+userId+"' ",(err, res) => {
     if (err) {
       console.log("error: ", err);
       result(err, null);
