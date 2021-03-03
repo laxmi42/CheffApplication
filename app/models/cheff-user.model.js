@@ -567,7 +567,7 @@ UserUplaodbase64 = ( userId, base64 ,result) => {
     console.log(res.length);
     if (res.length>0)
     {
-      sql.query("UPDATE UserUpload SET  base64 = '"+base64  +"'  WHERE userId= '"+userId +"'", (err, rest) =>{ 
+      sql.query("UPDATE userupload SET  base64 = '"+base64  +"'  WHERE userId= '"+userId +"'", (err, rest) =>{ 
  
         if (err) {
           console.log("error: ", err);
