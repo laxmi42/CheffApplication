@@ -1534,7 +1534,7 @@ Feedback = (feedback,rating,userid,cheffid,bookingid, result) => {
     }
 else {
 
-  sql.query("INSERT INTO Feedback  SET feedback=?,rating=?,userid=?,cheffid=?,bookingid=?", [feedback,rating,userid,cheffid,bookingid], (err, rest) =>{ 
+  sql.query("INSERT INTO feedback  SET feedback=?,rating=?,userid=?,cheffid=?,bookingid=?", [feedback,rating,userid,cheffid,bookingid], (err, rest) =>{ 
     if (err) {
       console.log("error: ", err);
       result(err, null);
