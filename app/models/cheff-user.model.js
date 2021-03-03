@@ -1193,7 +1193,7 @@ getAllUserBookings = result => {
   //      console.log(arr1);
   //     var queryData=[arr1];
 
-      sql2="SELECT d.bookingDate,b.ID,r.State,r.Area,r.City,r.id,r.email,b.personsNumber,r.MobileNumber, group_concat( distinct c.menu4) as menu4 ,group_concat(distinct  d.desertName) as desertName,b.menu1,b.menu2,b.menu3,b.category FROM bookservice  b        JOIN userregister  r  ON (r.id=b.userId)             JOIN usermenu4items  c  ON (c.bookingDate=b.bookingDate) JOIN userdesert d ON (d.bookingDate=b.bookingDate)    where b.userId= c.userId and b.userId= d.userId and b.assign=1   group by b.bookingDate"
+      sql2="SELECT d.bookingDate,b.ID,b.State,b.Area,b.City,r.id,r.email,b.personsNumber,r.MobileNumber, group_concat( distinct c.menu4) as menu4 ,group_concat(distinct  d.desertName) as desertName,b.menu1,b.menu2,b.menu3,b.category FROM bookservice  b        JOIN userregister  r  ON (r.id=b.userId)             JOIN usermenu4items  c  ON (c.bookingDate=b.bookingDate) JOIN userdesert d ON (d.bookingDate=b.bookingDate)    where b.userId= c.userId and b.userId= d.userId and b.assign=1   group by b.bookingDate"
       sql.query(sql2,  function (err, rest) {
           if (err) throw err;
 console.log(rest);
