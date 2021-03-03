@@ -1555,7 +1555,7 @@ else {
 
 //get User By Email
 getUserRatingById = (userid,cheffid,bookingid, result) => {
-  sql.query("SELECT * from Feedback where userid= '"+userid +"' and cheffid= '"+cheffid +"' and bookingid= '"+bookingid +"'   ", (err, res) => {
+  sql.query("SELECT * from feedback where userid= '"+userid +"' and cheffid= '"+cheffid +"' and bookingid= '"+bookingid +"'   ", (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(err, null);
@@ -1584,7 +1584,7 @@ getUserRatingById = (userid,cheffid,bookingid, result) => {
 
 //get All User Info
 getFeedBack = result => {
-  sql.query("SELECT * from Feedback", (err, res) => {
+  sql.query("SELECT * from feedback", (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
