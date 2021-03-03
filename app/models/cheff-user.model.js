@@ -672,7 +672,7 @@ else {
 
 //get User By Email
 getUserUploadedImage = ( userId, result) => {
-  sql.query("SELECT * from UserUpload where userId= '"+userId +"' ", (err, res) => {
+  sql.query("SELECT * from userupload where userId= '"+userId +"' ", (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(err, null);
