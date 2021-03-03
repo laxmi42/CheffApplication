@@ -580,7 +580,7 @@ UserUplaodbase64 = ( userId, base64 ,result) => {
     }
 else {
 
-  sql.query("INSERT INTO UserUpload  SET  base64=? , userId=? ", [base64,userId], (err, rest) =>{ 
+  sql.query("INSERT INTO userupload  SET  base64=? , userId=? ", [base64,userId], (err, rest) =>{ 
     if (err) {
       console.log("error: ", err);
       result(err, null);
