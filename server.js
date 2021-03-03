@@ -76,10 +76,9 @@ console.log(c);
       return;
     }
 console.log(res);
-res.json(res);
-return;
+   
   });
- 
+  res.json({ message: "Welcome to bezkoder application." });
 });
 
 require("./app/routes/customer.routes.js")(app);

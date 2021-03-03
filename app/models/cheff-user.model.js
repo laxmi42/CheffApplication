@@ -351,7 +351,7 @@ LoginCheff = ( Email, password, result) => {
          
   //       }
   // else {
-   sql.query("select * from CheffProfile where Email ='"+Email+"' and password = '"+password+"'",(err, resp) => {
+   sql.query("select * from cheffProfile where Email ='"+Email+"' and password = '"+password+"'",(err, resp) => {
      console.log(resp);
    
      if (err) {
