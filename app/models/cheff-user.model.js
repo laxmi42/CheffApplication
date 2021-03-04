@@ -1328,7 +1328,7 @@ console.log(am);
 var datetime = new Date();
 console.log(datetime);
 console.log(datetime);
-  sql.query("INSERT INTO Transaction  SET cheffId=?,creditedAmount=?,debitedAmount=?,walletAmount=?,CreditedDate=?", [cheffId,cm,0,amount,datetime], (err, rest) =>{ 
+  sql.query("INSERT INTO transaction  SET cheffId=?,creditedAmount=?,debitedAmount=?,walletAmount=?,CreditedDate=?", [cheffId,cm,0,amount,datetime], (err, rest) =>{ 
     if (err) {
       console.log("error: ", err);
       result(null, err);
