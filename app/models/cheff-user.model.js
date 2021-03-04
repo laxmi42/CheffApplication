@@ -36,7 +36,7 @@ const userRegister = function(user) {
 RegisterUser = (Name, Email, MobileNumber,StateName,CityName,AreaName,  password, result) => {
 
 
-    sql.query("select * from userRegister where Email ='"+Email+"' ",(err, res) => {
+    sql.query("select * from userregister where Email ='"+Email+"' ",(err, res) => {
       // if (err) {
       //   console.log("error: ", err);
       //   result(err, null);
@@ -59,7 +59,7 @@ RegisterUser = (Name, Email, MobileNumber,StateName,CityName,AreaName,  password
       }
   else {
   
-    sql.query("INSERT INTO userRegister  SET Name=? , Email=? ,MobileNumber=?,State=?,City=?,Area=?,password=?", [Name,Email,MobileNumber,StateName,CityName,AreaName,password], (err, rest) =>{ 
+    sql.query("INSERT INTO userregister  SET Name=? , Email=? ,MobileNumber=?,State=?,City=?,Area=?,password=?", [Name,Email,MobileNumber,StateName,CityName,AreaName,password], (err, rest) =>{ 
     })
     let nums=[
     
