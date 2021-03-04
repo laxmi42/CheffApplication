@@ -290,7 +290,7 @@ LoginAdmin = ( Email, password, result) => {
 RegisterCheff = (Name, Email, password, result) => {
 
 
-  sql.query("select * from CheffProfile where Email ='"+Email+"' ",(err, res) => {
+  sql.query("select * from cheffprofile where Email ='"+Email+"' ",(err, res) => {
     // if (err) {
     //   console.log("error: ", err);
     //   result(err, null);
@@ -313,7 +313,7 @@ RegisterCheff = (Name, Email, password, result) => {
     }
 else {
 
-  sql.query("INSERT INTO CheffProfile  SET Name=? , Email=?, password=?", [Name,Email,password], (err, rest) =>{ 
+  sql.query("INSERT INTO cheffprofile  SET Name=? , Email=?, password=?", [Name,Email,password], (err, rest) =>{ 
   })
   let nums=[
   
