@@ -120,6 +120,11 @@ module.exports = app => {
       // Create a new Customer
       app.post("/InsertCreditedTransaction", users.InsertCreditedTransaction);
 
+
+      
+      // Create a new Customer
+      app.post("/UpdatePassword", users.UpdatePassword);
+
  // Create a new Customer
 
  app.post("/InsertDebitedTransaction", users.InsertDebitedTransaction);
