@@ -1620,7 +1620,7 @@ getCheffInfo= result => {
 
 
 
-UpdatePassword= ( mobilenumber,password ,result) => {
+UpdatePasswordUser= ( mobilenumber,password ,result) => {
 
 sql.query("UPDATE userregister SET  password= '"+password +"'  WHERE mobilenumber = '"+mobilenumber +"'", (err, rest) =>{ 
 
@@ -1644,7 +1644,28 @@ resp=[
 
 
 
+  UpdatePasswordCheff= ( mobilenumber,password ,result) => {
 
+    sql.query("UPDATE cheffprofile SET  password= '"+password +"'  WHERE mobilenumber = '"+mobilenumber +"'", (err, rest) =>{ 
+    
+    if (err) {
+    console.log("error: ", err);
+    result(err, null);
+    return;
+    }
+    
+    
+    
+    resp=[
+      rest
+      ]
+      result(resp)
+      return;
+      })
+      
+      
+      }
+    
 
 
 
