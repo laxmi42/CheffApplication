@@ -778,7 +778,7 @@ res.send(data);
     exports.UpdatePassword = (req, res) => {
        
       // console.log(req.body.password);
-      UpdatePassword(req.body.ID,req.body.password,( data) => {
+      UpdatePassword(req.body.mobilenumber,req.body.password,( data) => {
           
      
     res.send(data);

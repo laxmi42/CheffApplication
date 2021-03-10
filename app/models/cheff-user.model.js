@@ -1620,9 +1620,9 @@ getCheffInfo= result => {
 
 
 
-UpdatePassword= ( ID,password ,result) => {
-  console.log(Email);
-sql.query("UPDATE cheffprofile SET  password= '"+password +"'  WHERE id = '"+ID +"'", (err, rest) =>{ 
+UpdatePassword= ( mobilenumber,password ,result) => {
+
+sql.query("UPDATE cheffprofile SET  password= '"+password +"'  WHERE mobilenumber = '"+mobilenumber +"'", (err, rest) =>{ 
 
 if (err) {
 console.log("error: ", err);
