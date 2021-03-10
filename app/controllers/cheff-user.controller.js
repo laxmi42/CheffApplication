@@ -775,25 +775,4 @@ res.send(data);
 
 
 
-    exports.UpdatePasswordUser = (req, res) => {
-       
-      // console.log(req.body.password);
-      this.UpdatePasswordUser(req.body.mobilenumber,req.body.password,( data) => {
-          
-     
-    res.send(data);
-        return res
-      });
-    }
-
-
-    exports.UpdatePasswordCheff = (req, res) => {
-       
-      // console.log(req.body.password);
-      this.UpdatePasswordCheff(req.body.mobilenumber,req.body.password,( data) => {
-          
-     
-    res.send(data);
-        return res
-      });
-    }
+   
