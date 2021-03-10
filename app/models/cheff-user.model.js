@@ -1619,6 +1619,29 @@ getCheffInfo= result => {
 
 
 
+
+
+UpdateUserPassword = ( mobilenumber,password,result) => {
+  console.log(Email);
+sql.query("UPDATE userregister SET  password= '"+password +"' WHERE mobilenumber = '"+mobilenumber +"'", (err, rest) =>{ 
+
+if (err) {
+console.log("error: ", err);
+result(err, null);
+return;
+}
+
+
+
+resp=[
+  rest
+  ]
+  result(resp)
+  return;
+  })
+  
+  
+  }
     
 
 

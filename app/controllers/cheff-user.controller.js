@@ -776,3 +776,13 @@ res.send(data);
 
 
    
+  exports.UpdateUserPassword = (req, res) => {
+       
+    // console.log(req.body.password);
+    UpdateUserPassword(req.body.mobilenumber,req.body.password, ( data) => {
+        console.log("Name"+req.body.Name);
+   
+  res.send(data);
+      return res
+    });
+  };
