@@ -123,7 +123,8 @@ module.exports = app => {
    // Create a new Customer
    app.post("/UpdateUserPassword", users.UpdateUserPassword);
       
-  
+     // Create a new Customer
+     app.post("/UpdateUserCheff", users.UpdateUserCheff);
  // Create a new Customer
 
  app.post("/InsertDebitedTransaction", users.InsertDebitedTransaction);

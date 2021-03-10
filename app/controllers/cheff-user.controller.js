@@ -780,7 +780,20 @@ res.send(data);
        
     // console.log(req.body.password);
     UpdateUserPassword(req.body.mobilenumber,req.body.password, ( data) => {
-        console.log("Name"+req.body.Name);
+
+   
+  res.send(data);
+      return res
+    });
+  };
+
+
+
+  exports.UpdateUserCheff = (req, res) => {
+       
+    // console.log(req.body.password);
+    UpdateUserCheff(req.body.mobilenumber,req.body.password, ( data) => {
+      
    
   res.send(data);
       return res
