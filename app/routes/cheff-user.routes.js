@@ -127,6 +127,14 @@ module.exports = app => {
      app.post("/UpdateUserCheff", users.UpdateUserCheff);
  // Create a new Customer
 
+
+
+
+ app.post("/ValidateMobile", users.ValidateMobile);
+
+
+
+
  app.post("/InsertDebitedTransaction", users.InsertDebitedTransaction);
  app.post("/UpdateCreditedTransaction", users.UpdateCreditedTransaction);
  app.post("/UpdateCheffAvailableStatus", users.UpdateCheffAvailableStatus);
