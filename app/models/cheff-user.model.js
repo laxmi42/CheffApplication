@@ -1694,7 +1694,7 @@ resp=[
 
 
 //Login
-ValidateMobile = ( MobileNumber, result) => {
+ValidateMobileCheff = ( MobileNumber, result) => {
 
 
   //     sql.query("select * from login where Email ='"+Email+"' and password = '"+password+"'",(err, res) => {

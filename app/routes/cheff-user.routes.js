@@ -130,7 +130,7 @@ module.exports = app => {
 
 
 
- app.post("/ValidateMobile", users.ValidateMobile);
+ app.post("/ValidateMobileCheff", users.ValidateMobileCheff);
 
  app.post("/ValidateMobileUser", users.ValidateMobileUser);
 
