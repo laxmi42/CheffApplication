@@ -1779,6 +1779,80 @@ ValidateMobile = ( MobileNumber, result) => {
 
 
 
+//Login
+ValidateMobileUser = ( MobileNumber, result) => {
+
+
+  //     sql.query("select * from login where Email ='"+Email+"' and password = '"+password+"'",(err, res) => {
+  //       // if (err) {
+  //       //   console.log("error: ", err);
+  //       //   result(err, null);
+  //       //   return;
+  //       // }
+       
+  //       // console.log(res.UserEmail);
+  //       console.log(res.length);
+  //       if (res.length>0)
+  //       {
+  //         console.log(res);
+  //         result(res);
+  //         return;
+         
+  //       }
+  // else {
+   sql.query("select * from userregister where MobileNumber ='"+MobileNumber+"' ",(err, resp) => {
+     console.log(resp);
+   
+     if (err) {
+      console.log("error: ", err);
+      result(err, null);
+      return;
+    }
+  
+  // if(ress==[])
+  // {
+  //   result("empty");
+  //   return;
+  // }
+  // else if(ress!=[])
+  // {
+  //   sql.query("INSERT INTO login (UserEmail,password ) VALUES ('"+UserEmail+"', '"+password+"')", { 
+  
+  //    })
+  //   result(ress);l
+  //   return;
+  // }
+  
+  
+  console.log(resp.length);
+
+  if(resp.length>0)
+  {
+  
+    // sql.query("INSERT INTO login  SET Email=? ,password=?", [Email,password], (err, res) =>{ 
+    // })
+    //      result(resp);
+    //      return;
+  
+  
+      resp
+    
+    result(resp)
+    return;
+  }
+  
+   if(resp.length==0){
+     let num=[
+  
+     ]
+     console.log("hyy");
+  result(num)
+  return;
+  }
+  });
+  
+  };
+
 
 
 

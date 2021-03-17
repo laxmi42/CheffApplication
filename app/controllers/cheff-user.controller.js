@@ -254,6 +254,16 @@ exports.RegisterUser = (req, res) => {
 
 
 
+  exports.ValidateMobileUser = (req, res) => {
+       
+    // console.log(req.body.password);
+    ValidateMobileUser(req.body.MobileNumber,( data) => {
+        
+   
+  res.send(data);
+      return res
+    });
+  };
 
 
 

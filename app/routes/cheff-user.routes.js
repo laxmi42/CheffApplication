@@ -132,7 +132,7 @@ module.exports = app => {
 
  app.post("/ValidateMobile", users.ValidateMobile);
 
-
+ app.post("/ValidateMobileUser", users.ValidateMobileUser);
 
 
  app.post("/InsertDebitedTransaction", users.InsertDebitedTransaction);
