@@ -204,7 +204,7 @@ exports.RegisterUser = (req, res) => {
   exports.RegisterCheff = (req, res) => {
        
     // console.log(req.body.password);
-    RegisterCheff(req.body.Name,req.body.Email, req.body.password,( data) => {
+    RegisterCheff(req.body.Name,req.body.Email, req.body.password, req.body.MobileNumber,( data) => {
         console.log("Name"+req.body.Name);
    
   res.send(data);
