@@ -1860,6 +1860,22 @@ ValidateMobileUser = ( MobileNumber, result) => {
 
 
 
+//get User By Email
+getUserBookedOrderById = ( userId,bookingid, result) => {
+  sql.query("SELECT d.bookingDate, b.ID,group_concat( distinct c.menu4) as menu4 ,group_concat(distinct  d.desertName) as desertName,b.menu1,b.menu2,b.menu3,b.category FROM bookservice  b    JOIN usermenu4items  c  ON (c.bookingDate=b.bookingDate) JOIN userdesert d ON (d.bookingDate=b.bookingDate) where b.userId= '"+userId +"' and c.userId= '"+userId +"' and d.userId= '"+userId +"'and  b.ID= '"+bookingid +"' group by c.bookingDate ", (err, res) => {
+    if (err) {
+      console.log("error: ", err);
+      result(err, null);
+      return;
+    }
+
+   console.log(res);
+
+   result( res);
+   return;
+  });
+};
+
 
 
 

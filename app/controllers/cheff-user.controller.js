@@ -284,6 +284,26 @@ exports.RegisterUser = (req, res) => {
 
 
 
+  
+  exports.getUserBookedOrderById = (req, res) => {
+       
+    // console.log(req.body.password);
+    getUserBookedOrderById(req.body.userId,req.body.bookingid, ( data) => {
+        console.log("Name"+req.body.bookingid);
+   
+  res.send(data);
+      return res
+    });
+  };
+
+
+
+
+
+
+
+
+
 
 
 

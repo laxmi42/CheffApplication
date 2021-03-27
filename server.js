@@ -57,27 +57,27 @@ app.get('/', cors(corsOptions), (req, res, next) => {
 
 app.get("/getdata", (req, res) => {
 
-  var mysql = require('mysql');
-  var c = mysql.createConnection({
+//   var mysql = require('mysql');
+//   var c = mysql.createConnection({
     
-    host:"31.170.160.103",
+//     host:"31.170.160.103",
  
-    database: "u271274439_cheffapp",
+//     database: "u271274439_cheffapp",
   
-    user: "u271274439_cheffapp",
-    password: "Admin@123",
+//     user: "u271274439_cheffapp",
+//     password: "Admin@123",
   
-  });
-console.log(c);
-  c.query("SELECT *  FROM categories ", (err, res) => {
-    if (err) {
-      console.log("error: ", err);
+//   });
+// console.log(c);
+//   c.query("SELECT *  FROM categories ", (err, res) => {
+//     if (err) {
+//       console.log("error: ", err);
       
-      return;
-    }
-console.log(res);
+//       return;
+//     }
+// console.log(res);
    
-  });
+//   });
   res.json({ message: "Welcome to bezkoder application." });
 });
 
