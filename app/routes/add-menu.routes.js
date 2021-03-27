@@ -31,6 +31,20 @@ module.exports = app => {
 
 
 
+
+     // Create a new Customer
+     app.post("/DeleteUserMenu4ByUser", users.DeleteUserMenu4ByUser);
+          // Create a new Customer
+          app.post("/DeleteuserDeserteByUser", users.DeleteuserDeserteByUser);
+             
+
+
+
+
+
+
+
+
                 // Create a new Customer
                 app.post("/DeleteBookedServiceByUser", users.DeleteBookedServiceByUser);
 

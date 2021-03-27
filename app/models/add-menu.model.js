@@ -1918,12 +1918,13 @@ console.log("bookservice"+rest);
 resp=[
   rest
   ]
- 
+  result( resp);
+  return;
   })
   
-  
+}
 
-
+DeleteUserMenu4ByUser = ( userid,bookingdate,result) => {
   sql.query("DELETE FROM usermenu4items WHERE userid='"+userid +"' and bookingdate='"+bookingdate +"'", (err, rest) =>{ 
 
     if (err) {
@@ -1937,11 +1938,12 @@ resp=[
     resp=[
       rest
       ]
-     
+      result( resp);
+      return;
       })
 
-
-      
+    }
+    DeleteuserDeserteByUser = ( userid,bookingdate,result) => {    
 sql.query("DELETE FROM userdesert WHERE userid='"+userid +"' and bookingdate='"+bookingdate +"'", (err, rest) =>{ 
 
   if (err) {
@@ -1955,16 +1957,11 @@ sql.query("DELETE FROM userdesert WHERE userid='"+userid +"' and bookingdate='"+
   resp=[
     rest
     ]
-   
-    })
-restt=[
-{
-  msg:"deleter sucessfully"
-}
-]
-    result(restt)
+    result( resp);
     return;
+    })
 
+    
 
 
 

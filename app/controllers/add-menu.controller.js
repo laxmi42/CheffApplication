@@ -83,9 +83,29 @@ exports.create = (req, res) => {
 
 
 
+  exports.DeleteUserMenu4ByUser = (req, res) => {
+       
+    // console.log(req.body.password);
+    DeleteUserMenu4ByUser(req.body.userid,req.body.bookingdate, ( data) => {
+     
+   
+  res.send(data);
+      return res
+    });
+  };
 
 
 
+  exports.DeleteuserDeserteByUser = (req, res) => {
+       
+    // console.log(req.body.password);
+    DeleteuserDeserteByUser(req.body.userid,req.body.bookingdate, ( data) => {
+     
+   
+  res.send(data);
+      return res
+    });
+  };
 
 
 
