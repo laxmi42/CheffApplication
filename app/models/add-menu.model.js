@@ -1919,8 +1919,7 @@ return;
 resp=[
   rest
   ]
-  result(resp)
-  return;
+ 
   })
   
   
@@ -1939,8 +1938,7 @@ resp=[
     resp=[
       rest
       ]
-      result(resp)
-      return;
+     
       })
 
 
@@ -1958,11 +1956,15 @@ sql.query("DELETE FROM userdesert WHERE userid='"+userid +"' and bookingdate='"+
   resp=[
     rest
     ]
-    result(resp)
-    return;
+   
     })
-
-
+restt=[
+{
+  msg:"deleter sucessfully"
+}
+]
+    result(restt)
+    return;
 
 
 
