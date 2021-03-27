@@ -1901,12 +1901,12 @@ CalculateAverageRating = ( cheffId, result) => {
 
 
 
-DeleteBookedServiceByUser = ( userid,bookingdate,bookingid,result) => {
+DeleteBookedServiceByUser = ( bookingid,result) => {
 
   // sql.query("SELECT * from planning ", (err, res) => {
   // })
 
-sql.query("DELETE FROM bookservice WHERE userid='"+userid +"' and  ID='"+bookingid +"' and bookingdate='"+bookingdate +"'", (err, rest) =>{ 
+sql.query("DELETE FROM bookservice WHERE   ID='"+bookingid +"' ", (err, rest) =>{ 
 
 if (err) {
 console.log("error: ", err);
