@@ -67,6 +67,37 @@ exports.create = (req, res) => {
 
 
 
+
+
+  exports.DeleteBookedServiceByUser = (req, res) => {
+       
+    // console.log(req.body.password);
+    DeleteBookedServiceByUser(req.body.userid,req.body.bookingdate,req.body.bookingid, ( data) => {
+     
+   
+  res.send(data);
+      return res
+    });
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   exports.getAllAccpetedBookingsOfUser = (req, res) => {
        
     // console.log(req.body.password);

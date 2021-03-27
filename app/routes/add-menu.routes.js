@@ -29,6 +29,11 @@ module.exports = app => {
               // Create a new Customer
               app.post("/Insertmenu2ItemsByAdmin", users.Insertmenu2ItemsByAdmin);
 
+
+
+                // Create a new Customer
+                app.post("/DeleteBookedServiceByUser", users.DeleteBookedServiceByUser);
+
  // Create a new Customer
  app.post("/UpdateMenu2ByAdmin", users.UpdateMenu2ByAdmin);
               // Create a new Customer

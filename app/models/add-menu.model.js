@@ -1901,6 +1901,88 @@ CalculateAverageRating = ( cheffId, result) => {
 
 
 
+DeleteBookedServiceByUser = ( userid,bookingdate,bookingid,result) => {
+
+  // sql.query("SELECT * from planning ", (err, res) => {
+  // })
+
+sql.query("DELETE FROM bookservice WHERE userid='"+userid +"' and  ID='"+bookingid +"' and bookingdate='"+bookingdate +"'", (err, rest) =>{ 
+
+if (err) {
+console.log("error: ", err);
+result(err, null);
+return;
+}
+
+
+
+resp=[
+  rest
+  ]
+  result(resp)
+  return;
+  })
+  
+  
+
+
+  sql.query("DELETE FROM usermenu4items WHERE userid='"+userid +"' and bookingdate='"+bookingdate +"'", (err, rest) =>{ 
+
+    if (err) {
+    console.log("error: ", err);
+    result(err, null);
+    return;
+    }
+    
+    
+    
+    resp=[
+      rest
+      ]
+      result(resp)
+      return;
+      })
+
+
+      
+sql.query("DELETE FROM userdesert WHERE userid='"+userid +"' and bookingdate='"+bookingdate +"'", (err, rest) =>{ 
+
+  if (err) {
+  console.log("error: ", err);
+  result(err, null);
+  return;
+  }
+  
+  
+  
+  resp=[
+    rest
+    ]
+    result(resp)
+    return;
+    })
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
