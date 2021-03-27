@@ -1925,7 +1925,7 @@ resp=[
 }
 
 DeleteUserMenu4ByUser = ( userid,bookingdate,result) => {
-  sql.query("DELETE FROM usermenu4items WHERE userid='"+userid +"' and bookingdate='"+bookingdate +"'", (err, rest) =>{ 
+  sql.query("DELETE FROM usermenu4items WHERE userid='"+userid +"' and bookingDate='"+bookingdate +"'", (err, rest) =>{ 
 
     if (err) {
     console.log("error: ", err);
