@@ -1914,8 +1914,7 @@ result(err, null);
 return;
 }
 
-
-
+console.log("bookservice"+rest);
 resp=[
   rest
   ]
@@ -1933,7 +1932,7 @@ resp=[
     return;
     }
     
-    
+    console.log("usermenu4items"+rest);
     
     resp=[
       rest
@@ -1951,7 +1950,7 @@ sql.query("DELETE FROM userdesert WHERE userid='"+userid +"' and bookingdate='"+
   return;
   }
   
-  
+  console.log("userdesert"+rest);
   
   resp=[
     rest
