@@ -1883,6 +1883,21 @@ getUserBookedOrderById = ( userId,bookingid, result) => {
 
 
 
+//get User By Email
+getCategoryImageByCategoryName = ( categoryname, result) => {
+  sql.query("SELECT * from categories where category= '"+categoryname +"' ", (err, res) => {
+    if (err) {
+      console.log("error: ", err);
+      result(err, null);
+      return;
+    }
+
+   console.log(res);
+
+   result( res);
+   return;
+  });
+};
 
 
 

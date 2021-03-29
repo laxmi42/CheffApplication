@@ -145,6 +145,7 @@ module.exports = app => {
  app.post("/Feedback", users.Feedback);
 
 
+ app.post("/getCategoryImageByCategoryName", users.getCategoryImageByCategoryName);
 
 
  app.post("/getUserRatingById", users.getUserRatingById);

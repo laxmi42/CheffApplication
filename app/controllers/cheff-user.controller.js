@@ -299,6 +299,17 @@ exports.RegisterUser = (req, res) => {
 
 
 
+  exports.getCategoryImageByCategoryName = (req, res) => {
+       
+    // console.log(req.body.password);
+    getCategoryImageByCategoryName(req.body.categoryname, ( data) => {
+    
+   
+  res.send(data);
+      return res
+    });
+  };
+
 
 
 
